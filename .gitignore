@@ -1,2 +1,9 @@
 cache/
 out/
+.env
+.idea
+/node_modules/
+/broadcast/
+broadcast/**
+.DS_Store
+**/.DS_Store

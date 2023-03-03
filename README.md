@@ -4,6 +4,9 @@
 
 ![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
 
+![Foundry Tests](https://github.com/pollum-io/forge-template/workflows/Foundry Tests/badge.svg)
+![Slither Lints](https://github.com/pollum-io/forge-template/workflows/Lints/badge.svg)
+
 ## Getting Started
 
 Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
