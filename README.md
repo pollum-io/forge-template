@@ -4,7 +4,9 @@
 
 ![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
 
-![Slither Lints](https://github.com/pollum-io/forge-template/workflows/Lints/badge.svg)
+<!-- ![Foundry Tests](https://github.com/pollum-io/forge-template/workflows/Foundry Tests/badge.svg)
+
+![Slither Lints](https://github.com/pollum-io/forge-template/workflows/Lints/badge.svg) -->
 
 ## Getting Started
 
