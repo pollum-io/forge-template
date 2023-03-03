@@ -1,6 +1,9 @@
-# <h1 align="center"> Forge Template </h1>
+#forge-template </h1>
+Template repository for getting started quickly with Foundry projects. 
 
-**Template repository for getting started quickly with Foundry projects**
+Forked from [Foundry's original repo](https://github.com/foundry-rs/forge-template/) with extra code to save you time.
+
+![img](./img/forge-template.png)
 
 ![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
 
@@ -10,14 +13,7 @@
 
 ## Getting Started
 
-Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
-
-Or, if your repo already exists, run:
-```sh
-forge init
-forge build
-forge test
-```
+Click "Use this template" on [GitHub](https://github.com/pollum-io/forge-template) to create a new repository with this repo as the initial state.
 
 ## Writing your first test
 
@@ -38,6 +34,39 @@ contract ContractTest is Test {
 }
 ```
 
+### Addresses
+#### Goerli
+- Contract1: https://goerli.etherscan.io/address/
+- Contract2: https://goerli.etherscan.io/address/
+- Contract3: https://goerli.etherscan.io/address/
+#### Mainnet
+- Contract1: https://etherscan.io/address/
+- Contract2: https://etherscan.io/address/
+- Contract3: https://etherscan.io/address/
+
 ## Development
 
-This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to install and use Foundry.
+This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to 
+install and use Foundry.
+
+## Deploying
+
+You can either deploy individual contracts or the whole system at once, depending on which script you run.
+
+For individual contracts, run:
+```bash
+cp .env.example .env
+## insert RPC, Etherscan & priv key
+source .env
+forge script script/DeployContractTestnet.s.sol:Deploy --rpc-url $GOERLI_RPC_URL --broadcast --verify -vvvv
+```
+
+To deploy the whole system + setup, run:
+```bash
+forge script script/DeploySystemTestnet.s.sol:Deploy --rpc-url $GOERLI_RPC_URL --broadcast --verify -vvvv
+```
+
+It's recommended to delete your broadcast/ folder when switching back and forth from single and full deployment scripts, as there are instances where Foundry may interprit legacy hardcoded parameters from single script contracts to the complete flow.
+
+### Docs
+Auto-generate docs via `forge doc`.
