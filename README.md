@@ -1,15 +1,18 @@
-#forge-template </h1>
+#forge-template
+
+![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
+
 Template repository for getting started quickly with Foundry projects. 
 
 Forked from [Foundry's original repo](https://github.com/foundry-rs/forge-template/) with extra code to save you time.
 
-![img](./img/forge-template.png)
-
-![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
-
 <!-- ![Foundry Tests](https://github.com/pollum-io/forge-template/workflows/Foundry Tests/badge.svg)
 
 ![Slither Lints](https://github.com/pollum-io/forge-template/workflows/Lints/badge.svg) -->
+
+<p align="center">
+  <img src="./img/forge-template.png" />
+</p>
 
 ## Getting Started
 
